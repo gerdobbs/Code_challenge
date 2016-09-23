@@ -20,13 +20,13 @@ public class LargestPrime {
 	
 	private static  long checkFactor()
 	{
-		while(Math.sqrt(largeNumber) > factorCheck)		//Stop search after square root is reached	
+		while(Math.sqrt(largeNumber) > factorCheck)//Stop search after square root is reached	
 		{
 			if(largeNumber % factorCheck == 0){			
-				largeNumber = largeNumber/factorCheck;	//Divides evenly to give next highest factor. Is it a prime?
+				largeNumber = largeNumber/factorCheck;//Divides evenly to give next highest factor. Is it a prime?
 			}
 			else{
-				factorCheck++;							//Does not divide evenly so check for factor again
+				factorCheck++;//Does not divide evenly so check for factor again
 			}
 		}
 		return largeNumber;

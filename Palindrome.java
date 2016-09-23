@@ -21,12 +21,12 @@ public class Palindrome {
 		
 		for(int i= number; i>=0; i--)				 
 		{
-			for(int j=number; j>=i; j--)			//Multiply first number by number >= firdt Number
+			for(int j=number; j>=i; j--)//Multiply first number by number >= firdt Number
 			{
-				if((i*j) == reverseResult(i*j))		//Is it a Palindrome
+				if((i*j) == reverseResult(i*j))//Is it a palindrome
 				{
 					if(i*j>largestPal)			
-						largestPal=i*j;				//New largest palindrome
+						largestPal=i*j;//New largest palindrome
 				}
 			}
 		}
@@ -34,11 +34,11 @@ public class Palindrome {
 	}
 	public static int reverseResult(int numToReverse){
 		int reversedNum=0;
-		int tempNum = 0;							 //Variable to stpre last digit each time
+		int tempNum = 0;//Variable to stpre last digit each time
 		while(numToReverse>0){
-			tempNum = numToReverse%10;				 //Isolate last digit
-			reversedNum = reversedNum*10 + tempNum;  //Move decimal point and add 
-			numToReverse = numToReverse/10;			 //Continue with New number without last digit
+			tempNum = numToReverse%10;//Isolate last digit
+			reversedNum = reversedNum*10 + tempNum; //Move decimal point and add 
+			numToReverse = numToReverse/10;//Continue with New number without last digit
 		}
 		return reversedNum;
 	}
