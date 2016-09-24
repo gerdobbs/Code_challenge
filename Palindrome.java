@@ -19,10 +19,9 @@ public class Palindrome {
 		
 		int number= 999;
 		int largestPal=0;
-		int firstNum, lastNum =0;
-		for(int i= number; i>=99; i--)				 
+		for(int i= number; i>99; i--)				 
 		{
-			for(int j=number; j>=i; j--)//Multiply first number by number >= firdt Number
+			for(int j=number; j>=i; j--)//Multiply number by 3 digit numbers > 0r = that number
 			{
 				if((i*j) == reverseResult(i*j))//Is it a palindrome
 				{
